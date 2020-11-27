@@ -55,8 +55,6 @@ html, body{
     width: 100%;
     height: auto;
     padding: 16px;
-    float: left;
-    margin: 0;
     box-shadow: 0px 0px 8px;
     background-color: #FAFAFA;
     position: fixed;
@@ -67,7 +65,7 @@ html, body{
     width: 64px;
     height: 64px;
 }
-.navlink{float: right; margin: 0;}
+.navlink{float: right;}
 
 .link{
     list-style-type: none;
@@ -75,23 +73,40 @@ html, body{
     padding: 8px;
     text-transform: uppercase;
 }
-.link a{
-    text-decoration: none;
-}
 
-.text-center {
-    text-align: center;
-}
+.link a{text-decoration: none;}
 
-h1, h2, h3, h4, h5, h6, p, span, button, li, a, i{
-    font-family: 'Open Sans', sans-serif;
-}
+.text-center {text-align: center;}
+
+h1, h2, h3, h4, h5, h6, p, span, button, li, a, i{font-family: 'Open Sans', sans-serif;}
 
 .fas {color: #0091EA;font-size: 32px;}
 a {color: #0091EA;}
 
 .title {
-    font-size: 27px;
-    font-weight: 700;
-    line-height: 1;
+    border-bottom: 2px solid #0091EA;
+    border-top: 2px solid #0091EA;
+    line-height: 150%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 8px;
+    font-size: x-large;
+}
+
+#footer {
+    background-color: #212121;
+    padding: 12px;
+}
+
+#footer div{
+    padding: 16px;
+}
+
+.footer-text{
+    color: #E0E0E0;
+    transition: 600ms;
+}
+
+.footer-text:hover{
+    text-shadow: 1px 1px 1px #424242;
 }
