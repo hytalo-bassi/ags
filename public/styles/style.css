@@ -54,7 +54,7 @@ html, body{
 .navbar {
     width: 100%;
     height: auto;
-    padding: 16px;
+    padding: 8px;
     box-shadow: 0px 0px 8px;
     background-color: #FAFAFA;
     position: fixed;
@@ -62,10 +62,26 @@ html, body{
 
 .logo {
     float: left;
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    height: 32px;
 }
-.navlink{float: right;}
+
+.navlink{float: right;margin: 0;}
+@media only screen and (min-width: 768px){
+    .navbar {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        box-shadow: 0px 0px 8px;
+        background-color: #FAFAFA;
+        position: fixed;
+    }
+    .logo {
+        width: 64px;
+        height: 64px;
+    }
+    .navlink{float: right;margin: 16px;}
+}
 
 .link{
     list-style-type: none;
